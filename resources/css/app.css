@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sign-form-title, #list-clients-title
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+#sign-btn
+{
+    position: relative;
+    top: 15px;
+}
+.table-fixed
+{
+    margin-top: 2%;
+}
+
+#grid-nome, #grid-endereco, #grid-bairro, #grid-cidade, #client-data
+{
+    text-transform: capitalize;
+}
+option
+{
+    text-transform: uppercase;
+}
+#client-data-delete
+{
+    margin: 5%;
+}
+#img-logo
+{
+    width: 4vw;
+}
+#client-op-icon-edit, #client-op-icon-trash
+{
+    font-size: 4.5vh;
+    position: relative;
+    vertical-align: middle;
+    color: black;
+    transition: ease-out 0.2s;
+    padding: 10px;
+}
+#client-op-icon-edit:hover{
+    background-color: rgba(130, 159, 255, 0.776);
+    transition: ease-in-out 0.3s;
+    color: white;
+    border-radius: 50px;
+}
+#client-op-icon-trash:hover{
+
+    background-color: rgba(171, 0, 0, 0.776);
+    transition: ease-in-out 0.3s;
+    color: white;
+    border-radius: 50px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    #client-table-div{
+        overflow-x: auto;
+    }
+    #client-op-icon
+    {
+        font-size: 2vh;
+    }
+    #client-data
+    {
+        font-size: 10px;
+    }
+    th
+    {
+        font-size: small;
+    }
+    #client-op-icon-edit, #client-op-icon-trash{
+        font-size: 2.5vh;
+    }
+}
